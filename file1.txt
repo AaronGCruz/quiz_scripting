@@ -1,0 +1,25 @@
+import sys #librería
+if __name__=="__main__":
+      for argumentos in sys.argv:
+            print(argumentos) 
+
+#Cantidad de líneas, palabras
+lineas= f.readlines()
+Lineas=len(lineas)
+Palabras= sum(len(linea.split()) for linea in lineas)
+python = sum(linea.lower().count('python') for linea in lineas)
+#Imprimir 
+print(f"Número de líneas {Lineas}")
+print(f"Numero de palabras {Palabras}")
+print(f"Número de veces repetidas la palabra Python {python}")
+
+import os 
+ruta=os.path.isfile("c:\Users\Usuario\OneDrive\scripting\file1.txt")
+if ruta:
+      print("El archivo existe ")
+else:
+      print("El archivo no existe")
+      
+
+
+      
